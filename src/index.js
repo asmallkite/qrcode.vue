@@ -220,7 +220,10 @@ const QrcodeVue = {
               'canvas',
               {
                 attrs: { height: size, width: size },
-                style: { width: size + 'px', height: size + 'px' },
+                style: {
+                  width: size / 37.5 + 'rem',
+                  height: size / 37.5 + 'rem',
+                },
                 ref: 'qrcode-vue',
               },
               []
